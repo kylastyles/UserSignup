@@ -1,0 +1,29 @@
+﻿@model UserSignup.ViewModels.AddUserViewModel
+
+<h1>Register New Users</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Username"></label>
+        <input class="form-control" asp-for="Username" required />
+        <span asp-validation-for="Username"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input class="form-control" asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <p>Passwords must be at least 6 characters long. </p>
+        <input class="form-control" type="password" asp-for="Password" required />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Verify"></label>
+        <input class="form-control" type="password" asp-for="Verify" required />
+        <span asp-validation-for="Verify"></span>
+    </div>
+
+    <input type="submit" value="Sign Up!" />
+</form>

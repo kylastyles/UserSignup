@@ -1,6 +1,9 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: floralwhite;
+    color: gray;
+    font-family: Garamond;
 }
 
 /* Wrapping element */
@@ -16,10 +19,6 @@
     line-height: 1.4;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
 
 /* QR code generator */
 #qrCode {
@@ -32,4 +31,25 @@
     .carousel-caption {
         display: none;
     }
+}
+
+
+#navbar-looks {
+    background-color: teal;
+    color: orchid;
+    font-family: Helvetica, sans-serif;
+    font-size: larger;
+}
+
+form {
+    padding: 20px;
+    border: 3px inset;
+}
+
+footer {
+    color: thistle;
+}
+
+span {
+    color: red;
 }
